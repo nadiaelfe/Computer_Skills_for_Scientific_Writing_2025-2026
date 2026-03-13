@@ -1,0 +1,98 @@
+\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title{Lab 07: Beamer Presentations}
+\subtitle{Introduction to LaTeX Presentations}
+\author{Nadia Ezzakate}
+\institute{RUDN University}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{What is Beamer?}
+\begin{itemize}
+  \item Beamer is a LaTeX class for creating presentations
+  \item Similar to PowerPoint but with LaTeX quality
+  \item Perfect for scientific and mathematical content
+\end{itemize}
+\end{frame}
+
+\section{Features}
+
+\begin{frame}{Key Features}
+\begin{enumerate}
+  \item Professional themes
+  \item Easy math formatting
+  \item Automatic slide numbering
+  \item Sections and subsections
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Math Example}
+\begin{equation}
+E = mc^2
+\end{equation}
+
+\begin{align}
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+\end{align}
+\end{frame}
+
+\section{Blocks}
+
+\begin{frame}{Different Block Types}
+\begin{block}{Standard Block}
+This is a normal block
+\end{block}
+
+\begin{alertblock}{Alert Block}
+This is an alert block
+\end{alertblock}
+
+\begin{examples}
+This is an example block
+\end{examples}
+\end{frame}
+
+\section{Columns}
+
+\begin{frame}{Multiple Columns}
+\begin{columns}
+\column{0.5\textwidth}
+Left column content:
+\begin{itemize}
+  \item Item 1
+  \item Item 2
+\end{itemize}
+
+\column{0.5\textwidth}
+Right column content:
+\begin{itemize}
+  \item Item A
+  \item Item B
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\begin{center}
+\Huge{Thank You!}
+\end{center}
+\end{frame}
+
+\end{document}

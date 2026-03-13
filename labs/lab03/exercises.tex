@@ -1,0 +1,29 @@
+\documentclass[fleqn]{article}  
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{bm}
+
+\begin{document}
+
+\section*{Greek Letters}
+$\alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta$
+
+\section*{Font Changes}
+$\mathrm{Roman}$, $\mathbf{Bold}$, $\mathit{Italic}$, $\mathsf{Sans}$, $\mathtt{Typewriter}$
+
+\section*{Nested Fonts}
+$\mathbf{Bold with \mathit{italic inside}}$  % What happens?
+
+\section*{Display Math}
+\[
+\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} \, dx = 1
+\]
+
+\section*{Multiple Equations}
+\begin{align}
+E &= mc^2 \\
+F &= ma \\
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}
+\end{align}
+
+\end{document}

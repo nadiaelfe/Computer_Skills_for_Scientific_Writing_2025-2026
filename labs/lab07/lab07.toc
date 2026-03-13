@@ -1,0 +1,5 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Features}{4}{0}{2}
+\beamer@sectionintoc {3}{Blocks}{6}{0}{3}
+\beamer@sectionintoc {4}{Columns}{7}{0}{4}

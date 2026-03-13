@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+
+\title{Lab 05: Table Experiments}
+\author{Nadia Ezzakate}
+\date{\today}
+\maketitle
+
+\section{Different Alignments}
+
+\subsection{Left aligned (l)}
+\begin{tabular}{lll}
+\toprule
+Name & Age & City \\
+\midrule
+John & 25 & New York \\
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\subsection{Centered (c)}
+\begin{tabular}{ccc}
+\toprule
+Name & Age & City \\
+\midrule
+John & 25 & New York \\
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\subsection{Right aligned (r)}
+\begin{tabular}{rrr}
+\toprule
+Name & Age & City \\
+\midrule
+John & 25 & New York \\
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\section{Too Few Items in a Row}
+\begin{tabular}{lll}
+\toprule
+Name & Age & City \\
+\midrule
+John & 25 \\  % Only 2 items for 3 columns
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\section{Too Many Items in a Row}
+\begin{tabular}{lll}
+\toprule
+Name & Age & City \\
+\midrule
+John & 25 & New York & Extra & Stuff \\  % Too many items
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\section{Using \textbackslash multicolumn}
+
+\subsection{Span 2 columns}
+\begin{tabular}{lll}
+\toprule
+\multicolumn{2}{c}{Personal Info} & City \\
+\midrule
+John & 25 & New York \\
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\subsection{Span all 3 columns}
+\begin{tabular}{lll}
+\toprule
+\multicolumn{3}{c}{Student Database} \\
+\midrule
+John & 25 & New York \\
+Maria & 30 & Los Angeles \\
+Ahmed & 22 & Chicago \\
+\bottomrule
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,730 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.27)  13 MAR 2026 16:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**exercises.tex
+(./exercises.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen142
+\ar@mcellbox=\box52
+\extrarowheight=\dimen143
+\NC@list=\toks17
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box53
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen144
+\lightrulewidth=\dimen145
+\cmidrulewidth=\dimen146
+\belowrulesep=\dimen147
+\belowbottomsep=\dimen148
+\aboverulesep=\dimen149
+\abovetopsep=\dimen150
+\cmidrulesep=\dimen151
+\cmidrulekern=\dimen152
+\defaultaddspace=\dimen153
+\@cmidla=\count270
+\@cmidlb=\count271
+\@aboverulesep=\dimen154
+\@belowrulesep=\dimen155
+\@thisruleclass=\count272
+\@lastruleclass=\count273
+\@thisrulewidth=\dimen156
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box54
+)
+No file exercises.aux.
+\openout1 = `exercises.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 10.
+! Misplaced \cr.
+l.65 ...xtra alignment tab has been changed to \cr
+                                                  ".
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 ...e to be inside here cd ~/Desktop/Computer_
+                                                  Skills_for_Scientific_Writ...
+
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \documentclass
+                   {article}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \usepackage
+                [T1]{fontenc}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 \usepackage
+                {array}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \usepackage
+                {booktabs}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \begin{document}
+                     
+? 
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.88 \maketitle
+               
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 \maketitle
+               
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.88 \maketitle
+               
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.88 \maketitle
+               
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.88 \maketitle
+               
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.88 \maketitle
+               
+? 
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.88 \maketitle
+               
+? ^^X
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? x
+ 
+Here is how much of TeX's memory you used:
+ 801 strings out of 473190
+ 12325 string characters out of 5715800
+ 403184 words of memory out of 5000000
+ 24125 multiletter control sequences out of 15000+600000
+ 563459 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,8n,50p,152b,114s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Lab 06: Bibliography Experiments}
+\author{Nadia Ezzakate}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+This is a simple document to test bibliography in LaTeX. 
+I will cite some references: \citet{knuth1984} and \citet{lamport1994}.
+
+\section{More Citations}
+Here are some parenthetical citations: \citep{goossens1993} 
+and also \citep[p.~42]{knuth1984}.
+
+Multiple citations together: \citep{knuth1984,lamport1994,goossens1993}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
