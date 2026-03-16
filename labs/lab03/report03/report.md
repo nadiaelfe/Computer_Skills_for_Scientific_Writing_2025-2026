@@ -299,25 +299,38 @@ $$
 $$
 
 ## 8. Жирный шрифт в математике
-
 Для жирного шрифта можно использовать несколько способов:
-
 
 **Способ 1: \mathbf{}** - только для букв:
 $$
-\[
 \mathbf{A} \cdot \mathbf{B} = \mathbf{C}
-\]
 $$
-**Способ 3: \boldsymbol{}**:
+
+**Способ 2: \boldsymbol{}**:
 $$
-\[
 \boldsymbol{\mu} = \boldsymbol{\alpha} \boldsymbol{\beta}
-\]
 $$
+
 **Сравнение:**
-- Обычный: $\alpha + \beta = \gamma$
-- Жирный: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$
+
+Обычный: $\alpha + \beta = \gamma$
+
+Жирный с \bm: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$ (требует пакет bm)
+
+**Дополнительные примеры:**
+
+Векторы:
+$$
+\mathbf{F} = m\mathbf{a}
+$$
+
+Тензоры:
+$$
+\bm{\sigma} = \begin{pmatrix}
+\sigma_{xx} & \sigma_{xy} \\
+\sigma_{yx} & \sigma_{yy}
+\end{pmatrix}
+$$
 
 # Выводы
 В ходе выполнения лабораторной работы были изучены основные возможности LaTeX для математического набора:
