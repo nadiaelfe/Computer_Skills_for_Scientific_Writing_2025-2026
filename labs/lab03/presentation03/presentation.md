@@ -89,6 +89,7 @@ $$
 # Матрицы
 
 Круглые скобки (pmatrix):
+
 $$
 \begin{pmatrix}
 1 & 2 & 3 \\
@@ -98,6 +99,8 @@ $$
 $$
 
 Квадратные скобки (bmatrix):
+
+
 $$
 \begin{bmatrix}
 a & b \\
@@ -106,6 +109,7 @@ c & d
 $$
 
 Определитель (vmatrix):
+
 $$
 \begin{vmatrix}
 a & b \\
