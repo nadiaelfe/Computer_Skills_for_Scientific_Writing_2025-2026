@@ -87,28 +87,172 @@ LaTeX предоставляет мощные возможности для на
 Код для этого примера:
 
 ## 3. Греческие буквы
-![Пример Греческие буквы](images/image5.png){ width=70% }
 
-![Пример Греческие буквы](images/image6.png){ width=70% }
+
+$$\Delta$$
+$$\alpha$$ 
+$$\beta$$ 
+$$\gamma$$
+$$\delta$$
+$$\epsilon$$
+$$\theta$$
+$$\lambda$$
+$$\pi$$
+$$\rho$$
+$$\sigma$$
+$$\phi$$ 
+$$\chi$$
+$$\omega$$
 
 
 ## 4. Интегралы и суммы
-![Пример Интегралы и суммы](images/image7.png){ width=70% }
+$$
+\int_{0}^{\infty} e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
+$$
+
+$$
+\sum_{k=1}^{\infty} \frac{1}{k^2} = \frac{\pi^2}{6}
+$$
+
+$$
+\oint_C \vec{F} \cdot d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot d\vec{S}
+$$
+
 ## 5. Многострочные формулы
-![Пример Многострочные формулы](images/image8.png){ width=70% }
+Для многострочных формул используется окружение `align*` из пакета amsmath:
 
-![Пример Многострочные формулы](images/image10.png){ width=80% }
+\begin{align*}
+(x+y)^2 &= x^2 + 2xy + y^2 \\
+(x-y)^2 &= x^2 - 2xy + y^2 \\
+(x+y)^3 &= x^3 + 3x^2y + 3xy^2 + y^3
+\end{align*}
 
+Выравнивание по знаку равенства:
+
+\begin{align*}
+f(x) &= x^2 + 2x + 1 \\
+     &= (x+1)^2
+\end{align*}
+
+Системы уравнений:
+
+\begin{align*}
+\begin{cases}
+x + y = 5 \\
+2x - y = 4
+\end{cases}
+\end{align*}
 
 ## 6. Матрицы
-![Пример Матрицы](images/image9.png){ width=70% }
+Для создания матриц используются различные окружения:
+
+**pmatrix** (круглые скобки):
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+$$
+
+**bmatrix** (квадратные скобки):
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}
+$$
+
+**vmatrix** (определитель):
+$$
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix} = ad - bc
+$$
+
+Матрицы с многоточиями:
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix}
+$$
 
 
 ## 7. Различные шрифты в математике
-Для этого раздела были изучены различные шрифты:
+В математическом режиме доступны различные шрифты:
+
+- Прямой шрифт: $\mathrm{ABCabc123}$
+- Полужирный: $\mathbf{ABCabc123}$
+- Курсивный: $\mathit{ABCabc123}$
+- Моноширинный: $\mathtt{ABCabc123}$
+- Каллиграфический (только заглавные): $\mathcal{ABC}$
+- Готический (только заглавные): $\mathfrak{ABCabc123}$
+- Двойной (только заглавные): $\mathbb{ABC}$
+
+Примеры использования:
+
+$$
+\mathrm{sin}^2 x + \mathrm{cos}^2 x = 1
+$$
+
+$$
+\mathbf{A} = \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+$$
+
+$$
+\mathcal{L}\{f(t)\} = \int_0^\infty e^{-st} f(t) \, dt
+$$
+
+$$
+\mathbb{R}, \mathbb{Z}, \mathbb{N}, \mathbb{Q}, \mathbb{C}
+$$
 
 ## 8. Жирный шрифт в математике
-![Пример Жирный шрифт в математике](images/image11.png){ width=70% }
+Для жирного шрифта можно использовать несколько способов:
+
+**С помощью команды `\mathbf`** (только для букв):
+$$
+\mathbf{A} \cdot \mathbf{B} = \mathbf{C}
+$$
+
+**С помощью пакета `bm` и команды `\bm`** (для любых символов, включая греческие):
+$$
+\bm{\alpha} + \bm{\beta} = \bm{\gamma}
+$$
+
+$$
+\bm{\nabla} \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+$$
+
+**С помощью команды `\boldsymbol`**:
+$$
+\boldsymbol{\mu} = \boldsymbol{\alpha} \boldsymbol{\beta}
+$$
+
+Пример сравнения:
+- Обычный: $\alpha + \beta = \gamma$
+- Полужирный с `\bm`: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$
+- Векторы: $\mathbf{F} = m\mathbf{a}$
+
+Векторные обозначения:
+$$
+\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})
+$$
+
+$$
+\bm{\sigma} = \begin{pmatrix}
+\sigma_{xx} & \sigma_{xy} \\
+\sigma_{yx} & \sigma_{yy}
+\end{pmatrix}
+$$
 
 # Выводы
 В ходе выполнения лабораторной работы были изучены основные возможности LaTeX для математического набора:
