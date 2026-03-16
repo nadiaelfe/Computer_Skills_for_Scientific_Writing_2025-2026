@@ -225,44 +225,46 @@ x + y = 5 \\
 \end{cases}
 $$
 ## 6. Матрицы
-Для создания матриц используются различные окружения:
-
 **pmatrix** (круглые скобки):
 $$
+\[
 \begin{pmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
 \end{pmatrix}
+\]
 $$
-
 **bmatrix** (квадратные скобки):
 $$
+\[
 \begin{bmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 9
 \end{bmatrix}
+\]
 $$
-
 **vmatrix** (определитель):
 $$
+\[
 \begin{vmatrix}
 a & b \\
 c & d
 \end{vmatrix} = ad - bc
+\]
 $$
-
-**Матрицы с многоточиями**:
+**Матрица с многоточиями**:
 $$
+\[
 \begin{pmatrix}
 a_{11} & a_{12} & \cdots & a_{1n} \\
 a_{21} & a_{22} & \cdots & a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{pmatrix}
+\]
 $$
-
 
 ## 7. Различные шрифты в математике
 В математическом режиме доступны различные шрифты:
@@ -300,41 +302,22 @@ $$
 
 Для жирного шрифта можно использовать несколько способов:
 
-**С помощью команды `\mathbf`** (только для букв):
+
+**Способ 1: \mathbf{}** - только для букв:
 $$
+\[
 \mathbf{A} \cdot \mathbf{B} = \mathbf{C}
+\]
 $$
-
-**С помощью пакета `bm` и команды `\bm`** (для любых символов, включая греческие):
+**Способ 3: \boldsymbol{}**:
 $$
-\bm{\alpha} + \bm{\beta} = \bm{\gamma}
-$$
-
-$$
-\bm{\nabla} \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
-$$
-
-**С помощью команды `\boldsymbol`**:
-$$
+\[
 \boldsymbol{\mu} = \boldsymbol{\alpha} \boldsymbol{\beta}
+\]
 $$
-
-**Пример сравнения:**
+**Сравнение:**
 - Обычный: $\alpha + \beta = \gamma$
-- Полужирный с `\bm`: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$
-- Векторы: $\mathbf{F} = m\mathbf{a}$
-
-**Векторные обозначения:**
-$$
-\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})
-$$
-
-$$
-\bm{\sigma} = \begin{pmatrix}
-\sigma_{xx} & \sigma_{xy} \\
-\sigma_{yx} & \sigma_{yy}
-\end{pmatrix}
-$$
+- Жирный: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$
 
 # Выводы
 В ходе выполнения лабораторной работы были изучены основные возможности LaTeX для математического набора:
