@@ -307,31 +307,23 @@ $$
 $$
 
 **Способ 2: \boldsymbol{}**:
+Для жирного шрифта можно использовать несколько способов:
+
+**Способ 1: \mathbf{}** - только для букв:
 $$
-\boldsymbol{\mu} = \boldsymbol{\alpha} \boldsymbol{\beta}
+\mathbf{A} \cdot \mathbf{B} = \mathbf{C}
+$$
+
+**Способ 2: \bm{}** - для любых символов (с пакетом bm):
+$$
+\bm{\alpha} + \bm{\beta} = \bm{\gamma}
 $$
 
 **Сравнение:**
 
 Обычный: $\alpha + \beta = \gamma$
 
-Жирный с \bm: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$ (требует пакет bm)
-
-**Дополнительные примеры:**
-
-Векторы:
-$$
-\mathbf{F} = m\mathbf{a}
-$$
-
-Тензоры:
-$$
-\bm{\sigma} = \begin{pmatrix}
-\sigma_{xx} & \sigma_{xy} \\
-\sigma_{yx} & \sigma_{yy}
-\end{pmatrix}
-$$
-
+Жирный с \bm: $\bm{\alpha} + \bm{\beta} = \bm{\gamma}$
 # Выводы
 В ходе выполнения лабораторной работы были изучены основные возможности LaTeX для математического набора:
 
