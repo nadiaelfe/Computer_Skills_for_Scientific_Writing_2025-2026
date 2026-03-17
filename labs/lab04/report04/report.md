@@ -61,12 +61,10 @@ $$ w = 0.5 \times \text{\textwidth} $$
 
 Для поворота и масштабирования используются параметры angle и scale:
 
-**
 ```latex
 \includegraphics[angle=45, width=3cm]{example-image}
 \includegraphics[scale=2, width=3cm]{example-image}
 ```
-**
 
 **Параметры преобразований:**
 
