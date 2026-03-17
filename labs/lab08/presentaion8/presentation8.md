@@ -4,7 +4,7 @@ lang: ru-RU
 title: Лабораторная работа №8
 subtitle: Diagrams and drawings as code (TikZ)
 author:
-  - Нонога Джинтоба
+  - Надиа Эззакат
 institute:
   - Российский университет дружбы народов, Москва, Россия
 date: Марта 2026
@@ -35,8 +35,12 @@ header-includes:
 - TeX Live 2025  
 - класс документа `article`  
 - пакет `tikz`
-
-![Компиляция exercise8_1.tex](1.png){ width=70% }
+  
+$$
+\[
+\text{pdflatex} \; exercise8\_1.tex \;\Rightarrow\; PDF
+\]
+$$
 
 ## Полученный результат
 
@@ -47,7 +51,17 @@ header-includes:
 - рёбра соединяют внешние и внутренние вершины;
 - веса рёбер подписаны непосредственно на линиях.
 
-![Результат Exercise 8.2.1](8.png){ width=70% }
+$$
+\[
+G = (V, E), \quad V = \{A, B, C, D, E, F, Z\}
+\]
+$$
+
+$$
+\[
+E = \{(V_i, V_j)\}, \quad w_{ij}
+\]
+$$
 
 # Exercise 8.2.2 — Plot
 
@@ -60,7 +74,11 @@ header-includes:
 - пакет `tikz`
 - стандартные средства TikZ для построения графиков
 
-![Компиляция exercise8_2.tex](3.png){ width=70% }
+$$
+\[
+\text{pdflatex} \; exercise8\_2.tex \;\Rightarrow\; PDF
+\]
+$$
 
 ## Построение графиков функций
 
@@ -73,7 +91,24 @@ header-includes:
 
 Каждый элемент выделен цветом и снабжён текстовой подписью.
 
-![Результат Exercise 8.2.2](9.png){ width=70% }
+$$
+\[
+y = e^x
+\]
+$$
+
+$$
+\[
+y = \ln(x), \quad x > 0
+\]
+$$
+
+$$
+\[
+x = 1, \quad y = 1
+\]
+$$
+
 
 # Exercise 8.2.3 — Sierpinski Carpet
 
@@ -86,7 +121,11 @@ header-includes:
 - пакет `tikz`
 - механизмы итераций и геометрических построений
 
-![Компиляция exercise8_3.tex](5.png){ width=70% }
+$$
+\[
+\text{pdflatex} \; exercise8\_3.tex \;\Rightarrow\; PDF
+\]
+$$
 
 ## Фрактальная структура
 
@@ -97,7 +136,17 @@ header-includes:
 - строгая симметрия;
 - масштабирование базовой фигуры.
 
-![Результат Exercise 8.2.3](7.png){ width=70% }
+$$
+\[
+S_{n+1} = S_n - C_n
+\]
+$$
+
+$$
+\[
+A_n = \left(\frac{8}{9}\right)^n A_0
+\]
+$$
 
 # Итоги работы
 
