@@ -34,9 +34,11 @@ mainfont: Times New Roman
 
 Размер изображения можно выразить как:
 
+$$
 \[
 k = \frac{h_{new}}{h_{original}}
 \]
+$$
 
 ## 2. Пропорции
 
