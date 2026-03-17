@@ -76,7 +76,9 @@ $$E = mc^2$$
 Или с использованием среды equation:
 
 \begin{equation}
+
 F = G\frac{m_1 m_2}{r^2}
+
 \end{equation}
 
 ## Степени и индексы
