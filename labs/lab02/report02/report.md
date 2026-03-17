@@ -129,9 +129,6 @@ $$
 (x-y)^2 &= x^2 - 2xy + y^2
 \end{align}
 
-\end{document}
-
-
 
 # Выводы
 
