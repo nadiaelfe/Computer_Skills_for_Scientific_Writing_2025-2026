@@ -109,7 +109,6 @@ x = 1, \quad y = 1
 \]
 $$
 
-
 # Exercise 8.2.3 — Sierpinski Carpet
 
 ## Компиляция исходного файла
