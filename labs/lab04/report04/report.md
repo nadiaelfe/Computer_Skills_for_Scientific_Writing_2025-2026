@@ -17,24 +17,11 @@ mainfont: Times New Roman
 
 ---
 # Упражнение 1: Вставка изображения
-В этом упражнении необходимо вставить изображение в документ.
+## 1. Подключение пакета graphicx
 
-**Код:**
+Для работы с графикой в LaTeX необходимо подключить пакет graphicx в преамбуле документа:
 
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
 \usepackage{graphicx}
-
-\begin{document}
-
-\section{Упражнение 1}
-
-Вставляю изображение в документ:
-
-\includegraphics[width=10cm]{example-image}
-
-\end{document}
 
 ---
 # Упражнение 2: Изменение размера
