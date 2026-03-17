@@ -67,7 +67,7 @@ header-includes:
 
 $$
 \[
-S = \{s_1, s_2,\ldots, s_n\}}
+S = \{s_1, s_2, ..., s_n\}}
 \]
 $$
 
