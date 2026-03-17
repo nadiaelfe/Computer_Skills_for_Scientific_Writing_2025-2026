@@ -36,11 +36,6 @@ header-includes:
 - класс документа `article`  
 - пакет `tikz`
   
-$$
-\[
-\text{pdflatex} \; exercise8\_1.tex \;\Rightarrow\; PDF
-\]
-$$
 
 ## Полученный результат
 
@@ -74,11 +69,7 @@ $$
 - пакет `tikz`
 - стандартные средства TikZ для построения графиков
 
-$$
-\[
-\text{pdflatex} \; exercise8\_2.tex \;\Rightarrow\; PDF
-\]
-$$
+
 
 ## Построение графиков функций
 
