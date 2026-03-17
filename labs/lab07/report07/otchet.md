@@ -61,7 +61,7 @@ header-includes:
 
 # Выполнение лабораторной работы
 
-## 1. Подготовка файлов
+[## 1. Подготовка файлов
 
 Множество файлов для работы:
 
@@ -221,7 +221,7 @@ $$
 $$
 \text{Appearance} = (\text{Theme}, \text{ColorTheme})
 $$
-
+](https://github.com/Djintoba/Laboratories)
 ---
 
 ## Вывод
