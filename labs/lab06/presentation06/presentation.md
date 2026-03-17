@@ -30,7 +30,7 @@ section-titles: true
 
 ## Задачи
 
-1. Создать BibTeX файл с参考文献
+1. Создать BibTeX файл с литературой
 2. Использовать пакет natbib для цитирования
 3. Изучить команды \textbackslash citet и \textbackslash citep
 4. Освоить многоэтапный процесс компиляции
@@ -75,15 +75,41 @@ text
 
 ## Результаты: Цитаты в тексте
 
-![Цитирование с использованием citet и citep](images/image1.png)
+$$ \text{\citet{knuth1984}} \rightarrow \text{Knuth (1984)} $$
+
+$$ \text{\citep{lamport1994}} \rightarrow \text{(Lamport, 1994)} $$
+
+$$ \text{\citet{goossens1993}} \rightarrow \text{Goossens et al. (1993)} $$
+
+$$ \text{\citep{knuth1984,lamport1994}} \rightarrow \text{(Knuth, 1984; Lamport, 1994)} $$
 
 ## Результаты: Дополнительные примеры
 
-![Parenthetical citations and page numbers](images/image2.png)
+$$ \text{\citep{knuth1984}} \rightarrow \text{(Knuth, 1984)} $$
+
+$$ \text{\citep[p.~42]{knuth1984}} \rightarrow \text{(Knuth, 1984, p. 42)} $$
+
+$$ \text{\citep[см.][p.~42]{knuth1984}} \rightarrow \text{(см. Knuth, 1984, p. 42)} $$
+
+$$ \text{\citep{knuth1984,lamport1994}} \rightarrow \text{(Knuth, 1984; Lamport, 1994)} $$
 
 ## Результаты: Сгенерированная библиография
 
-![Финальная библиография, автоматически отформатированная](images/image3.png)
+Финальная библиография, автоматически отформатированная:
+
+$$ \text{Кнут, Д.Э. (1984). The TeXbook. Addison-Wesley.} $$
+
+$$ \text{Лэмпорт, Л. (1994). LaTeX: A Document Preparation System. Addison-Wesley.} $$
+
+$$ \text{Гуссенс, М., Миттельбах, Ф. и Самарин, А. (1993). The LaTeX Companion. Addison-Wesley.} $$
+
+Библиография создается автоматически в формате, определенном стилем:
+
+$$ \text{Библиография} = \bigcup_{i=1}^{n} \{\text{ref}_i\} $$
+
+Каждая ссылка форматируется единообразно:
+
+$$ \text{ref}_i = \text{Автор, Название, Издательство, год} $$
 
 ## Команды цитирования
 
