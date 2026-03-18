@@ -1,0 +1,373 @@
+% \documentclass{article}
+\documentclass[leqno]{article}
+% \documentclass[border=1cm]{standalone}
+\usepackage[T2A]{fontenc}        
+\usepackage[utf8]{inputenc}    
+\usepackage[russian,english]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyvrb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{tikz}
+\usetikzlibrary{math}
+% \usepackage{natbib}
+% \usepackage[style=numeric]{biblatex}
+
+% \usepackage{unicode-math}
+% \setmainfont{TeX Gyre Pagella}
+% \setmathfont{TeX Gyre Pagella Math}
+
+% \addbibresource{learnlatex.bib} % file of reference info
+
+\title{Computer Skills for Scientific Writing\\Диаграммы и чертежи в виде кода}
+\author{Абрамян Артём Арменович}
+\date{Февраль 2026}
+
+% \newcommand\Triangle[2]{
+%   \draw #1 coordinate(a) -- ++(0:#2) coordinate(b);
+%   \draw (a) -- ++(60:#2) coordinate(c);
+%   \fill (a) -- (b) -- (c) -- cycle;
+% }
+
+\begin{document}
+  \maketitle
+  \pagebreak
+
+  \textbf{Цель работы:} Изучить возможности создания диаграм и рисования в LaTeX, разобраться с набором инструментов TikZ.\smallskip
+
+  \section{Введение}
+  \label{sec:intro}
+  
+Существует множество различных наборов инструментов для создания графических объектов в документе TeX. 
+Самый известный и, вероятно, наиболее широко используемый из этих наборов инструментов — это TikZ, 
+рекурсивная аббревиатура от «TikZ ist kein Zeichenprogramm» (нем. «TikZ — это не программа для рисования»). 
+Из названия набора инструментов видно, что создание фигуры в TikZ не будет работать путем рисования фигуры, 
+как это обычно делается в Paint или подобных программах для рисования. 
+Для создания фигуры с помощью TikZ вам потребуется запрограммировать ее, используя специальные команды TeX. 
+Здесь мы рассмотрим основы TikZ.
+
+Три полезных источника информации и вдохновения для создания фигур TikZ:
+• Статья о TikZ на Wikibooks: https://en.wikibooks.org/wiki/LaTeX/PGF/Ti
+kZ.
+
+• Статья о TikZ на CTAN с официальным руководством и другой документацией:
+https://www.ctan.org/pkg/pgf.
+
+• База данных TeXample TikZ, полная примеров и вдохновения: https://texa
+mple.net/tikz/.
+
+  
+  \section{Основные компоненты TikZ}
+  \label{sec:essential}
+  
+Для создания рисунка в TikZ вам сначала нужно загрузить соответствующий пакет в ваш файл TeX,
+ то есть использовать \\usepackage{tikz} в преамбуле. 
+ Существует широкий спектр опций и специальных библиотек TikZ, 
+ которые также можно использовать и которые необходимо загрузить отдельно, но они нам не понадобятся в этом курсе для начинающих.
+  Вы можете ознакомиться с доступными опциями и попробовать их самостоятельно, используя три ссылки, указанные выше.
+Рисунок TikZ обычно помещается в среду LaTeX \\begin{figure}, как и другие рисунки. 
+  Это полезно, поскольку позволяет присвоить рисунку номер и подпись, чтобы вы могли легко ссылаться на него. 
+  Внутри среды рисунка вы можете начать создание рисунка TikZ, написав код \\begin{tikzpicture}, 
+  после чего вы можете начать верстку рисунка. Как обычно,
+вы закрываете среду кодом \\end{tikzpicture}.
+
+В отличие от того, к чему вы привыкли при наборе текста и математических выражений в LaTeX, вам понадобится
+один символ, который не соответствует напрямую тому, что вы можете увидеть
+в вашем документе. Каждая строка кода TikZ должна быть закрыта точкой с запятой.
+Давайте начнем с пошагового набора графика в TikZ. В конце этого
+урока мы сможем набрать следующий рисунок.
+
+
+    
+  \section{Рисование линий}
+  \label{sec:lines}
+  
+  График состоит из нескольких точек и прямых. Построение графика начинается с определения координат точек. 
+  В TikZ это можно сделать двумя разными способами.
+Декартова координата задается двумя числами (координатами x и y), разделенными запятой и заключенными в круглые скобки,
+ например (-2,0) или (1,5,1,5). В TikZ координаты также можно задавать в полярной форме. 
+ Это также работает, если задать два числа внутри круглых скобок (угол в градусах и длина), 
+ разделенные двоеточием, например (180:2) или (45:2,1) для (приблизительно) тех же двух координат.
+Примечание: если единица измерения не указана, по умолчанию используются сантиметры, координаты также можно задавать,
+ например, (1 см, 2 пт).
+Теперь мы можем нарисовать прямые линии между этими координатами, используя команду \\draw.
+
+
+  \begin{tikzpicture}
+\draw (-1,0) -- (3,10pt) -- (35:3);
+\end{tikzpicture}
+
+  
+
+Помимо рисования прямых линий, мы также можем определять другие типы линий,
+и этим линиям можно присвоить цвет, толщину или узор. Например,
+используйте -| или |- вместо -- для рисования линий, которые сначала идут горизонтально, а затем вертикально,
+или наоборот. Стиль линий можно изменить, задав параметры
+команде \\draw. Это делается путем помещения этих параметров в квадратные скобки
+после команды. В следующем примере мы рисуем стрелку вместо линии,
+и задаем цвет другой линии.
+
+
+
+\begin{tikzpicture}
+\draw[->] (-1,0) -| (3,10pt);
+\draw[red] (3,10pt) -- (35:3);
+\end{tikzpicture}
+
+
+Используйте исходный код TikZ, чтобы увидеть, какие типы опций возможны.
+Мы можем рисовать не только прямые линии, но и кривые. 
+Это можно сделать несколькими разными способами. В следующем примере мы представляем три варианта.
+
+
+\begin{tikzpicture}
+\draw (-1,0) to (5,1);
+\draw[green] (-1,0) to[out=90,in=135] (5,1);
+\draw[cyan] (-1,0) .. controls (0,-2) .. (5,1);
+\end{tikzpicture}
+
+
+Первое, что вы можете заметить, это использование `to` вместо `--` для соединения координат. 
+Эта команда работает точно так же, но при использовании `to` мы можем добавить параметры к команде соединения.
+ Для зеленой линии мы задаем два параметра: во-первых, угол (в градусах), под которым линия отклоняется от первой координаты,
+  и во-вторых, угол, под которым линия достигает второй координаты. 
+  Синяя линия — это так называемая кривая Безье, линия, определяемая ее начальной и конечной точками,
+   а также рядом опорных точек (в данном случае одной), которые фактически притягивают линию к себе. 
+   В TikZ такие линии могут быть определены с одной или двумя опорными точками. 
+   В приведенном ниже примере мы приводим код для построения кривой Безье с двумя опорными точками.
+
+
+\begin{tikzpicture}
+\draw[dotted,gray] (-1,0) -- (5,1);
+\draw (-1,0) .. controls (0,-2) and (4,2) .. (5,1);
+\end{tikzpicture}
+
+
+
+
+  \section{Nodes}
+  \label{sec:node}
+
+Следующий шаг на пути к верстке графика — это подписи, фрагменты текста и
+числа, содержащиеся в рисунке. Для написания текста в рисунке TikZ нам нужен
+объект, называемый узлом. Простейший пример узла — это текст, размещенный
+на заданной координате, но узел также может представлять собой фрагмент текста, окруженный кругом,
+прямоугольником или другой простой фигурой. Узел не обязательно должен содержать текст,
+но в большинстве случаев текст является целью узла. Узел можно определить во время
+рисования пути, что работает следующим образом:
+
+
+\begin{tikzpicture}[scale=3]
+\draw (0,0) node {hello} -- (1,1) node {world};
+\end{tikzpicture}
+
+
+Параметр [scale=3] в начале рисунка увеличивает масштаб рисунка в 3 раза. 
+Командному узлу также можно задать параметры, например, разместить узел посередине линии, в конце линии и т. д.
+
+
+\begin{tikzpicture}[scale=3]
+\draw (0,0) -- (1,1) node[midway]{A} node[pos=0.75,above]{B} node[right]{C};
+\end{tikzpicture}
+
+
+
+Обратите внимание: при использовании команды `to` вместо `--` расположение узла `--` немного меняется. 
+Приведенный ниже пример кода генерирует то же изображение, что и выше.
+
+
+\begin{tikzpicture}[scale=3]
+\draw (0,0) to node[midway]{A} node[pos=0.75, above]{B} (1,1) node[right]{C};
+\end{tikzpicture}
+
+
+Узлам также можно приписывать математические формулы, и, как уже говорилось, их можно
+ограничить простой геометрической фигурой.
+
+
+\begin{tikzpicture}[scale=3]
+\draw (0,0) node[circle, draw]{$\sum_{i=1}^{n}n^2$} -- (1,1)
+node[rectangle,draw]{$\frac{1}{\sqrt{2}}$};
+\end{tikzpicture}
+
+
+Как вы могли заметить, линия, соединяющая узлы, по-прежнему начинается и заканчивается
+точно в заданных координатах, что выглядит не очень красиво. Эту проблему можно решить,
+предварительно определив узлы и присвоив им метки, чтобы мы могли нарисовать линию от
+узла к узлу.
+
+\begin{tikzpicture}[scale=3]
+% define nodes
+\node[circle,draw] (label1) at (0,0) {$\sum_{i=1}^{n}n^2$};
+\node[rectangle,draw] (label2) at (1,1)
+{$\frac{1}{\sqrt{2}}$};
+% draw the line
+\draw (label1) -- (label2);
+\end{tikzpicture}
+
+
+Теперь мы рассмотрели достаточно примеров, чтобы понять, как можно оформить график в TikZ.
+ Следующий фрагмент кода используется для генерации графика, показанного в начале этого урока.
+
+
+ \begin{tikzpicture}[scale=2]
+  % Define the nodes
+\node[circle, draw] at (0,0) (a) {A};
+\node[rectangle, fill] at (3,0) (b) {};
+\node at (3,0.4) (blabel) {B};
+\node[rectangle,rounded corners, draw] at (5,2) (c) {C};
+% Draw the paths
+\draw[->, green] (a) -- (b) node[midway, below,black]{2};
+\draw[<->, blue] (a) to[out=45, in=135] (b);
+\draw[->,red] (b)--(c);
+\draw[yellow,dotted,very thick] (b) |- (c);
+\draw[<-,cyan] (b) -| (c);
+\draw[thick,black] (a).. controls (1,5) .. (c) node[midway, above]{$\frac{1}{2}$};
+\end{tikzpicture}
+
+
+
+  \section{Построение кривых}
+  \label{sec:curves}
+
+В TikZ можно не только рисовать линии между координатами. 
+Также имеется встроенный способ построения графиков для широкого спектра различных функций. 
+Например, для функции $y = x^2$ на интервале $[-2, 2]$.
+
+
+\begin{tikzpicture}
+\draw [domain=-2:2] plot (\x, {pow(\x,2});
+\end{tikzpicture}
+
+
+
+
+
+\begin{tikzpicture}[scale=1.5]
+% Draw the x and y axis, label the axes and the origin
+\draw[gray, ->] (-2,0) -- (2,0) node[right]{$x$}
+ node[pos=0.53, below]{$O$};
+\draw[gray, ->] (0,-1) -- (0,1) node[above]{$y$};
+\draw[fill,gray] (0,0) circle [radius=1pt];
+% Plot the curve
+\draw[blue, thick] [domain=-2:2, samples=150] plot (\x,
+ {cos(pi*\x r)})
+node[right]{$y = \cos(x)$};
+% Note: the r in the argument of the cosine signifies that
+ we enter x in radians
+\end{tikzpicture}
+
+
+  \section{Работа с циклами}
+  \label{sec:loops}
+
+В TikZ также можно использовать циклы for, применяя команду \\foreach ... in ....
+Таким образом, довольно сложное изображение можно очень быстро набрать.
+
+\begin{tikzpicture}[scale=0.75]
+\foreach \x in {0,1,2,3}
+\draw[red,thick] (0,\x) circle [radius=\x+1];
+\end{tikzpicture}
+
+
+% Эта идея очень полезна для построения итеративных фигур, таких как треугольник Серпинского, 
+% хотя для этого требуется специальная библиотека TikZ, с помощью которой можно определить рекурсивную функцию. 
+% Следующий код показывает первые шесть итераций треугольника Серпинского,
+% нарисованных в TikZ. Код также содержит некоторые элементы в преамбуле
+%  (перед \\begin{document}), поэтому мы приводим полный код LaTeX для PDF-файла, содержащего только эту фигуру.
+
+
+% Define a equilateral triangle with lower left corner at coordinate #1 and
+% with length of the sides #2
+
+
+% \begin{tikzpicture}
+% \tikzmath{
+% % Define the recursive function sierpinski
+% function sierpinski(x, y, s, d) {
+% if (d == 0) then {
+% % Draw a triangle lower left corner at (\x, \y), length \s
+% { Triangle{(x,y)}{s}; };
+% } else {
+% % Rescale the length of the sides and choose correct coords
+% % for the next triangles
+% u1 = 0.25*s;
+% u2 = u1*sqrt(3);
+% u3 = 0.5*s;
+% sierpinski(x,y,u3,d-1);
+% sierpinski(x+u3,y,u3,d-1);
+% sierpinski(x+u1,y+u2,u3,d-1);
+% };
+% };
+% % Let the length of the sides of the base triangle be 4, and generate 6 figures
+% \S = 4;
+% for d in {0,...,5}{
+% % To situate all plots nicely under and next to each other, define the coords
+% % of the lower left corners preemptively
+% x = (S+1)*mod(d,2);
+% y = int(d/2) * (S+1);
+% sierpinski(x,-y,S,d);
+% };
+% \end{tikzpicture}
+
+
+
+  \section{Упражнения}
+  \label{sec:ex}
+
+  \subsection{Graph 1}
+  \label{subsec:first}
+
+
+  \begin{tikzpicture}[scale=2]
+  \node[circle, draw, fill=green!60, minimum size=8mm] at (0,1.8) {A};
+
+\node[circle, draw, double, minimum size=8mm] at (-1.6,0.8) {B};
+\node[circle, draw, fill=green!60, minimum size=8mm] at (-1.2,-0.8) {C};
+\node[circle, draw, double, minimum size=8mm] at (0,-1.6) {D};
+\node[circle, draw, fill=green!60, minimum size=8mm] at (1.2,-0.8) {E};
+\node[circle, draw, double, minimum size=8mm] at (1.6,0.8) {F};
+
+% --- Edges ---
+\draw[blue, dotted, thick] (-1.6,0.8) -- (1.6,0.8)
+  node[midway, above] {6};
+
+\draw[blue, dotted, thick] (-1.6,0.8) -- (0,-1.6)
+  node[midway, left] {2};
+
+\draw[blue, dotted, thick] (1.6,0.8) -- (0,-1.6)
+  node[midway, right] {4};
+
+\draw[cyan, thick]
+  (-1.6,0.8) to[out=-120, in=120] (-1.2,-0.8);
+
+\draw[cyan, thick]
+  (-1.2,-0.8) to[out=-30, in=-150] (0,-1.6);
+
+\draw[red, thick]
+  (0,1.8) to[out=180, in=90] (-1.6,0.8);
+
+\draw[red, thick]
+  (0,1.8) to[out=-20, in=90] (1.2,-0.8);
+
+\draw[red, thick]
+  (0,1.8) to[out=-90, in=120] (0,-1.6)
+  node[midway, right] {$\sqrt{2}$};
+
+\end{tikzpicture}
+
+  \section{Заключение}
+  \label{sec:conclusion}
+  
+  \textbf{Выводы:} В данной работе мы изучили возможности создания диаграм и рисования в LaTeX, разобрались с набором инструментов TikZ.
+
+\end{document}
