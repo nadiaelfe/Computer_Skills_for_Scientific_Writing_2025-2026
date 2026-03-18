@@ -66,7 +66,7 @@ header-includes:
   - \usepackage{indentfirst}
   - \usepackage{float}
   - \floatplacement{figure}{H}
----
+
 --- 
 
 ## Цель работы
